@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="textprincipal">Conversor de Monedas Nacional</h1>
+        <div class="subcontainer">
+        <label class="textconversor1"for="monto">Pesos CLP</label>
+        <input class="ingresemonto" type="number" placeholder="Ingrese el monto en CLP" id="monto">
+        <label class="textconversor2" for="moneda">Moneda a convertir:</label>
+        <select class="ingresamoneda" id="moneda">
+            <option value="" disabled selected>selecione moneda</option>
+            <option value="uf">UF</option>
+            <option value="utm">UTM</option>
+            <option value="dolar">Dólar</option>
+            <option value="euro">Euro</option>
+            <option value="ivp">IVP</option>
+            <option value="ipc">IPC</option>
+            <option value="tpm">TPM</option>
+            <option value="bitcoin">Bitcoin</option>
+        </select>
+        <button class="btn1" id="btn">Buscar</button>
+        <p  class="parrafo" id="resultado"></p>
+        <button class="btn2"id="btn2">agregar a la lista</button>
+        <div>
+        <ul id="listaConversaciones"></ul>
+        </div>  
+        </div>
+    </div>
+    <hr>
+    <div class="subcontainer1">
+    <canvas id="grafico" width="310" height="1000"></canvas>
+    </div>
+    
+    
+    <script src="./assets/javascript.js"></script>
+</body>
+</html>
